@@ -200,6 +200,8 @@ class AllBot {
 
     // Mention @all command
     this.robot.hear(/(.*)@all(.*)/i, res => this.respondToAtAll(res));
+    this.robot.hear(/(.*)@everybody(.*)/i, res => this.respondToAtAll(res));
+    this.robot.hear(/(.*)@everydamnbody(.*)/i, res => this.respondToAtAll(res));
   }
 }
 
